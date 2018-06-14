@@ -1,0 +1,9 @@
+baseurl = "/"
+title = "Marginalia"
+theme = "hugo-paper"
+titleCaseStyle = "AP"
+reserveTaxonomyNames = true
+[taxonomies]
+    tag = "tags"
+    author = "authors"
+    book = "book"
