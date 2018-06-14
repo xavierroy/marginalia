@@ -4,6 +4,28 @@ theme = "hugo-paper"
 titleCaseStyle = "AP"
 reserveTaxonomyNames = true
 [taxonomies]
-    tag = "tags"
-    author = "authors"
-    book = "book"
+  tag = "tags"
+  author = "authors"
+  book = "book"
+
+[permalinks]
+  post = "/:slug/"
+  page = "/:slug/"
+
+[[menu.main]]
+  name = "Tags"
+  url = "/tags"
+  weight = -120
+
+[[menu.main]]
+  name = "Authors"
+  url = "/authors"
+  weight = -130
+
+[[menu.main]]
+  name = "Books"
+  url = "/book"
+  weight = -140
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
