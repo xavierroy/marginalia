@@ -170,6 +170,9 @@ pre, code {
 ======================================================================= */
 .list {
   background: #fafafa;
+  margin: 0;
+padding: 0;
+line-height: 1.3em;
 }
 /* Main
 ------------------------------ */
@@ -230,9 +233,13 @@ pre, code {
   font-size: 12px;
   letter-spacing: 2px;
   text-transform: uppercase;
+
 }
 .list-title {
   font-size: 50px;
+  font-size: 32px;
+margin-top: 60px;
+padding-bottom: 10px;
 }
 /* Post
 ------------------------------ */
@@ -535,3 +542,106 @@ background-color: palegoldenrod;
 }
 
 .search-results{}
+
+  .list,
+  .category,
+  .tag-cloud {
+    margin: 0;
+    padding: 0;
+    line-height: 1.3em;
+  }
+
+  .list-title,
+  .category-title,
+  .tag-cloud-title {
+    font-size: 32px;
+    margin-top: 60px;
+    padding-bottom: 10px;
+  }
+
+  .list-item {
+    margin: 0 0 20px;
+    padding: 0;
+  }
+
+  .list-item-date {
+    display: block;
+    padding: 4px 0;
+    font-family: 'Lato', sans-serif;
+    color: #ccc;
+    font-size: 14px;
+  }
+
+  .list-item a {
+    display: inline-block;
+    box-sizing: border-box;
+    width: auto;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 3px 0;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: #222;
+    border-bottom: 1px solid #ddd;
+    transition: border-color 300ms;
+  }
+
+  .list-item a:hover {
+    border-color: #222;
+  }
+
+  .category-item {
+    display: block;
+    list-style: none;
+    margin: 5px 0 15px;
+    padding: 0;
+  }
+
+  .category-item a {
+    display: inline-block;
+    padding: 5px 0;
+    text-decoration: none;
+    font-size: 19px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: #222;
+    transition: color 300ms;
+  }
+
+  .category-item-count {
+    font-family: 'Lato', sans-serif;
+    margin-right: 15px;
+    color: #ccc;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .tag-cloud-item {
+    margin: 0;
+    padding: 0;
+  }
+
+  .tag-cloud-item li {
+    display: inline-block;
+    list-style: none;
+    padding: 0 15px 15px 0;
+  }
+
+  .tag-cloud-item a {
+    text-decoration: none;
+    font-family: 'Proza Libre', sans-serif;
+    font-weight: bold;
+    color: #222;
+    transition: color 300ms;
+  }
+
+  .tag-cloud-item a:hover,
+  .tag-cloud-item a:active,
+  .category-item a:hover,
+  .category-item a:active {
+     color: #ccc;
+  }

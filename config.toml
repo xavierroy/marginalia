@@ -16,17 +16,17 @@ reserveTaxonomyNames = true
 [[menu.main]]
     name="Search"
     url="/search"
-    weight = -120
+    weight = -140
 
 [[menu.main]]
   name = "Tags"
   url = "/tags"
-  weight = -100
+  weight = -130
 
 [[menu.main]]
   name = "Authors"
   url = "/authors"
-  weight = -110
+  weight = -120
 
 [[menu.main]]
   name = "Books"
