@@ -3,6 +3,7 @@ title = "Marginalia"
 theme = "hugo-paper"
 titleCaseStyle = "AP"
 reserveTaxonomyNames = true
+
 [taxonomies]
   tag = "tags"
   author = "authors"
@@ -13,19 +14,26 @@ reserveTaxonomyNames = true
   page = "/:slug/"
 
 [[menu.main]]
+    name="Search"
+    url="/search"
+    weight = -120
+
+[[menu.main]]
   name = "Tags"
   url = "/tags"
-  weight = -120
+  weight = -100
 
 [[menu.main]]
   name = "Authors"
   url = "/authors"
-  weight = -130
+  weight = -110
 
 [[menu.main]]
   name = "Books"
   url = "/book"
-  weight = -140
+  weight = -130
+
+
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]

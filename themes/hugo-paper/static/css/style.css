@@ -522,3 +522,16 @@ pre, code {
 .home-tags a:hover {
   background: rgba(0, 0, 0, .08);
 }
+/* Search
+======================================================================= */
+.my-auto{
+
+}
+
+#search-query{
+border-radius: 1px;
+background-color: palegoldenrod;
+
+}
+
+.search-results{}
