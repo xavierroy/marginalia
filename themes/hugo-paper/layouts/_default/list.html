@@ -21,9 +21,20 @@
     {{ safeHTML (.Scratch.Get `firstEmoji`) }}
     <h2 class="post-title">{{ .Title }}</h2>
   </header>
-  <p class="post-summary">{{ .Summary | plainify | htmlUnescape }}...</p>
+  <div class="post-summary">{{ .Content }}</div>
   <footer class="post-footer">
-    <p class="post-meta">{{ .Date.Format "2006.1.2" }}</p>
+      <p class="post-meta">
+        {{ .Params.authors }}·
+        {{ .Params.book }} ·
+        {{ .Date.Format "2006.1.2" }}</p>
+        {{ if .Params.tags }}
+        <ul class="home-tags">
+          <i data-feather="tag"></i>
+          {{ range .Params.tags }}
+          <li><a href="{{ `/tags/` }}{{ . | urlize }}/">{{ . }}</a></li>
+          {{ end }}
+        </ul>
+        {{ end }}
   </footer>
   <a class="post-link" href="{{ .Permalink }}"></a>
 </article>
