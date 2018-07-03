@@ -1,0 +1,15 @@
+{{ partial "header.html" . }}
+<article class="post">
+  <header class="list-header">
+    <h1 class="list-title">{{ .Title }}</h1> </header>
+
+    {{ range .Paginator.Pages }}
+
+  <div class="post-view">
+    <header class="post-header">
+      <h2 class="post-title">{{ .Title }} </h2>
+      <p class="post-meta"> <a class="author-name" href="{{ `/authors/` }}{{ .Params.authors | urlize }}/">{{ .Params.authors }}</a> · <a class="book-title" href="{{ `/book/` }}{{ .Params.book | urlize }}/">{{ .Params.book }}</a> · {{- .Date.Format "2006.1.2" -}} </p>
+    </header>
+    <div class="post-content">{{ .Content }} </div>
+
+  </div> {{ end }} </article> {{ partial "footer.html" . }}
