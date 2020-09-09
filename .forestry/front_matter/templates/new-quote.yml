@@ -1,0 +1,19 @@
+---
+label: New Quote
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: authors
+  label: authors
+- type: text
+  name: book
+  label: book
+- type: list
+  name: tags
+  label: tags
