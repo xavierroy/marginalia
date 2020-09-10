@@ -18,4 +18,5 @@ fields:
   name: tags
   label: tags
 pages:
+- content/post/books-are-enchanted-wardrobes.md
 - content/post/inventing-monsters.md
